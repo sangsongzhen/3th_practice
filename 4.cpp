@@ -1,22 +1,22 @@
-//递归和非递归两种方法
-//求s = 1 + 2 + 3 + ...+ n
-//函数原型：float sum(int n) , 限定N >= 1
+//閫掑綊鍜岄潪閫掑綊涓ょ鏂规硶
+//姹俿 = 1 + 2 + 3 + ...+ n
+//鍑芥暟鍘熷瀷锛歠loat sum(int n) , 闄愬畾N >= 1
 #include<iostream>
 using namespace std;
 
-float sum(int n);	//函数声明
-float sum1(int n);	//函数声明
+float sum(int n);	//鍑芥暟澹版槑
+float sum1(int n);	//鍑芥暟澹版槑
 
 void main4()
 {
 	float n;
-	cout << "请输入一个大于一的整数：";
+	cout << "璇疯緭鍏ヤ竴涓ぇ浜庝竴鐨勬暣鏁帮細";
 	cin >> n;
 	cout << sum1(n) << endl;
 
 }
 
-float sum(int n)	//非递归
+float sum(int n)	//闈為�掑綊
 {
 	float sum = 0;
 	for (int i = 1; i <= n; i++)
@@ -26,7 +26,7 @@ float sum(int n)	//非递归
 	return sum;
 }
 
-float sum1(int n)	//递归
+float sum1(int n)	//閫掑綊
 {
 	float sum;
 	if (n == 1)
